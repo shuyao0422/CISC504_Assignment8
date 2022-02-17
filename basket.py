@@ -1,7 +1,7 @@
 DEFAULT_INITIAL_BASKET = ["orange", "apple"]
 
 def create_picnic_basket(healthy, hungry, initial_basket=DEFAULT_INITIAL_BASKET):
-    basket = initial_basket
+    basket = initial_basket.copy()
     if healthy:
         basket.append("strawberry")
     else:
